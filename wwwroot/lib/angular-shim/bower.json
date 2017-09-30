@@ -1,0 +1,33 @@
+{
+  "name": "angular-shim",
+  "main": "src/angular-shim.js",
+  "version": "2.0.0",
+  "homepage": "https://github.com/adambullmer/angular-shim",
+  "authors": [
+    "Adam Bullmer <psycodrumfreak@gmail.com>"
+  ],
+  "description": "ES6 compiled AMD wrapper for Angular.js",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals"
+  ],
+  "keywords": [
+    "angular",
+    "shim",
+    "amd",
+    "commonjs",
+    "cjs",
+    "umd",
+    "systemjs"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.5.2"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
