@@ -12,6 +12,7 @@
     },
 
     "files": [
+        "src/app/app.module.ts",
         "src/app/app.component.ts",
         "src/main.ts"
     ],
