@@ -1,1 +1,1 @@
-﻿
+!function(){"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("@angular/core"),r=require("@angular/platform-browser-dynamic"),o=require("./app/app.module");require("./environments/environment").environment.production&&e.enableProdMode(),r.platformBrowserDynamic().bootstrapModule(o.AppModule).catch(function(e){return console.log(e)})}();
