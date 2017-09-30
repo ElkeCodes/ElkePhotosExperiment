@@ -47,6 +47,17 @@ namespace ElkePhotos
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            // if MVC can't handle the route, we probably have an Angular route
+            app.Use(async (context, next) =>
+            {
+                await next();
+                if (context.Response.StatusCode == 404 && !Path.HasExtension(context.Request.Path.Value))
+                {
+                    context.Request.Path = "/index.html";
+                    await next();
+                }
+            });
+
             app.UseStaticFiles();
 
             app.UseMvc(routes =>
